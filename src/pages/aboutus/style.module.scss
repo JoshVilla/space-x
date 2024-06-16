@@ -1,0 +1,68 @@
+.container {
+
+  .summary {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .infoContainer {
+    width: 100%;
+    margin: 80px 0;
+
+    .info {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 20px 0;
+    }
+  }
+
+  .persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+    .itemPerson {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      img {
+        margin: auto;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .accountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 40px 0;
+    .name {
+      text-decoration: none;
+      margin-left: 10px;
+      font-size: 12px;
+      color: #fff;
+
+      &:hover {
+        color: #c1c1c1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

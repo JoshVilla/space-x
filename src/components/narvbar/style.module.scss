@@ -1,0 +1,32 @@
+.navbarContainer {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    height: 40px;
+  }
+
+  .navContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navItem {
+    &:hover {
+      border-bottom: 2px solid #c1c1c1;
+      cursor: pointer;
+
+    }
+  }
+  .navActive {
+    border-bottom: 2px solid #fff;
+  }
+}
