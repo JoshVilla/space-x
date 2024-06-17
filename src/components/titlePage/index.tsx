@@ -5,7 +5,11 @@ type Props = {
 };
 
 const TitlePage = ({ title }: Props) => {
-  return <div className={style.title}>{title}</div>;
+  return (
+    <div className={style.title} data-aos="fade-up" data-aos-duration="1000">
+      {title}
+    </div>
+  );
 };
 
 export default TitlePage;

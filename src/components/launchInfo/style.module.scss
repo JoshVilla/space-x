@@ -1,0 +1,70 @@
+
+.latestLaunch {
+margin: 30px auto;
+width: 80%;
+padding: 40px;
+display: flex;
+align-items: center;
+.leftSide {
+  width: 50%;
+
+  .crew {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .crewItems {
+      display: flex;
+      align-items: center;
+
+      .crewInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .crewName {
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+
+        .stats {
+          font-size: 16px;
+        }
+      }
+
+      img {
+        margin-right: 20px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: 10% 10%;
+      }
+    }
+  }
+
+}
+
+.rightSide {
+  width: 50%;
+
+  .patch {
+    width: 100%;
+    text-align: center;
+
+    img {
+      margin: 20px auto;
+      width: 200px;
+    }
+  }
+.headerLive{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+  iframe {
+    border: none;
+    width: 100%;
+  }
+}
+}

@@ -1,18 +1,23 @@
 import React, { useEffect } from "react";
 import style from "./style.module.scss";
 import { Link } from "react-router-dom";
-import { getCrew } from "../../utils/api";
+import { getCores, getCrew } from "../../utils/api";
 import { useDispatch, useSelector } from "react-redux";
 import { getCrews } from "../../features/getCrews";
-
+import { getCoress } from "../../features/getCores";
 const Home: React.FC = () => {
   const dispatch = useDispatch();
-  const sample = useSelector((state) => state);
 
   useEffect(() => {
     getCrew().then((res) => {
       if (res.status === 200) {
         dispatch(getCrews(res.data));
+      }
+    });
+
+    getCores().then((res) => {
+      if (res.status === 200) {
+        dispatch(getCoress(res.data));
       }
     });
   }, [dispatch]);

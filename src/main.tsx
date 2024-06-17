@@ -6,10 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import crewsReducer from "./features/getCrews.ts";
-
+import coresReducer from "./features/getCores.ts";
 const store = configureStore({
   reducer: {
     crews: crewsReducer,
+    cores: coresReducer,
   },
 });
 
