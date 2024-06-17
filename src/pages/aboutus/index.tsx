@@ -52,7 +52,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1000">
       {loading ? (
         <>
           <TitlePage title="About Us" />
