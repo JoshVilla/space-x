@@ -1,0 +1,51 @@
+.mainContainer {
+  // border: 1px solid white;
+  width: 100%;
+
+  .infoWapper {
+    width: 70&;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .leftItem {
+      width: 80%;
+      // border: 1px solid white;
+      .description {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+      }
+
+      .infoContainer {
+        margin: 50px auto;
+        width: 50%;
+
+        .itemInfo {
+          border-bottom: #4c4c4c 1px solid;
+          padding: 20px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .value {
+            span:nth-child(2) {
+              color: #c1c1c1;
+            }
+          }
+        }
+      }
+
+    }
+
+    .rightItem {
+      // border: 1px solid white;
+      width: 40%;
+    }
+
+  }
+
+}

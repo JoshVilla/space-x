@@ -34,3 +34,11 @@ export const getCores = async () => {
     url: "https://api.spacexdata.com/v4/cores",
   });
 };
+//
+
+export const getRockets = async (id: string = "") => {
+  return await axios({
+    method: "get",
+    url: `https://api.spacexdata.com/v4/rockets/${id}`,
+  });
+};
